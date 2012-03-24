@@ -6,11 +6,7 @@
  * 
  * @author     Piotr "Wilku" Wilk <wilku002@gmail.com>
  * @copyright  Copyright (c) 2012 Piotr Wilk
-<<<<<<< HEAD
  * @license    See README file
-=======
- * @license    See LICENSE file
->>>>>>> 2da235bdbfdedaf3e7546e3ffd0f5bd56d3234e0
  */
 
 class Kohana_Recaptcha {
@@ -34,23 +30,13 @@ class Kohana_Recaptcha {
     protected $_view_config;
      
    	/**
-<<<<<<< HEAD
 	 * Module configuration
-=======
-	 * Load the reCAPTCHA PHP library and module configuration
->>>>>>> 2da235bdbfdedaf3e7546e3ffd0f5bd56d3234e0
 	 *
 	 * @param   array  $config
 	 * @return  object
 	 */
 	public function __construct(array $config = NULL)
-<<<<<<< HEAD
 	{   
-=======
-	{
-		require_once Kohana::find_file('includes', 'recaptcha/recaptchalib');
-        
->>>>>>> 2da235bdbfdedaf3e7546e3ffd0f5bd56d3234e0
         if(empty($config))
         {
             $config = Kohana::$config->load('recaptcha');
